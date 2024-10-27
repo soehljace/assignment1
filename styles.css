@@ -1,0 +1,71 @@
+div {
+    position: relative; /* Makes this the reference point */
+}
+
+.title {
+    color: orange;
+    background-color: black;
+    position: relative ;z-index: 4000;
+    width: 1605px;
+    height: 200px;
+    top: -105px; 
+    left:-10px;
+    display: flex;           
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+    font-family: cursive;
+
+}
+
+a {
+    color: orange;
+    border: 1px solid orange;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 12px;
+    margin: 5px;
+    cursor: pointer;
+    position: relative ;z-index: 40000; /* Absolute position to layer it on top of the title */
+}
+
+a:hover {
+    font-size: 18px;
+}
+#posts {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 100%; /* Set container to full width */
+}
+
+.post-title {
+    max-width: 750px; /* Max width prevents oversized posts */
+    border: 3px solid orange;
+    padding: 10px;
+    left:10px;
+    box-sizing: border-box;
+    top:-150px;
+    border-radius: 5px;
+    background-color: black;
+    color:white;
+}
+.blog-title{
+    width: 100%;
+    margin: 5px;
+    gap:10px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.blog-date{
+    width:100%;
+    left:5px;
+    font-size: 20px;
+}
+.list{
+    gap:20px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
